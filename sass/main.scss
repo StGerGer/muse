@@ -1,0 +1,96 @@
+@import "./themes/_light.scss";
+@import "./_fonts.scss";
+@import "./_home.scss";
+
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+.vert-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.vert-center-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.group-select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-left {
+  justify-content: flex-start;
+}
+
+.flex-right {
+  justify-content: flex-end;
+}
+
+.flex-menu {
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text-large {
+  font-size: 2rem;
+}
+
+.very-small {
+  font-size: 1rem;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.fill {
+  height: 100vh;
+  width: 100vw;
+}
+
+.clickable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.clickable:hover {
+  opacity: 0.8;
+}
+
+.no-select {
+  user-select: none;
+}
+
+.text-editable {
+  cursor: text;
+  width: 100%;
+  line-height: 1.2;
+}
+
+.hide {
+  display: none;
+}
+
+:not(.no-animate) {
+  transition: 0.2s;
+}
+
+.table td {
+  border: 0 !important;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

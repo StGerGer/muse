@@ -1,0 +1,39 @@
+$body-font: -apple-system, BlinkMacSystemFont, "Open Sans Regular";
+$primary-color: hsl(226, 89%, 61%);
+$secondary-color: hsl(100, 89%, 40%);
+$danger-color: hsl(0, 89%, 40%);
+
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Light Italic";
+  src: url("fonts/OpenSans-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Italic";
+  src: url("fonts/OpenSans-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("fonts/OpenSans-Bold.ttf");
+}
+
+body {
+  font-family: $body-font;
+  user-select: none; /* Feels more like native OS app */
+  cursor: default;
+}
+
+.emphasized {
+  color: $primary-color;
+}

@@ -1,0 +1,114 @@
+.header {
+  border-bottom: 1px solid $subtleBorderColor;
+  background-color: $subtleOffsetColor;
+  padding: .8rem .5rem .3rem .5rem;
+  z-index: 100;
+
+  -webkit-app-region: drag;
+
+  position: fixed;
+  top: 0;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+
+  #search {
+    flex: 1;
+  }
+
+  * {
+    margin-left: .2rem;
+    margin-right: .2rem;
+  }
+
+  i {
+    user-select: none;
+  }
+
+  #backContainer {
+    margin-top: .5rem;
+    margin-bottom: -.5rem;
+  }
+
+  #toRoot {
+    margin-left: -0.4rem;
+    margin-right: -.5rem;
+  }
+}
+
+#contentList {
+  font-size: 14px;
+  tr {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+#contextMenu {
+  width: 300px;
+  height: calc(100vh - 67px);
+
+  position: fixed;
+  top: 67px;
+  right: 0px;
+
+  border-left: 1px solid $subtleBorderColor;
+  background: $subtleOffsetColor;
+  z-index: 100;
+  overflow-y: scroll;
+
+  transform: translateX(301px);
+}
+
+#settingsButton {
+  border-left: 1px solid $subtleBorderColor;
+}
+
+#groupContainer {
+  margin-left: 55px;
+  padding-left: 5px;
+  border-left: 1px solid #AAA;
+}
+
+#fileDescArea {
+  font-size: 0.8rem;
+}
+
+#previewImg {
+  height: 200px;
+  border: 1px solid #AAA;
+  border-radius: 4px;
+}
+
+.group-select {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.content {
+  padding-top: 66px;
+  height: calc(100vh - 67px);
+}
+
+.spin {
+  animation: 1.5s spin;
+}
+
+.table-dense {
+  td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

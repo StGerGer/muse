@@ -1,0 +1,180 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("fonts/OpenSans-Regular.ttf"); }
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("fonts/OpenSans-Light.ttf"); }
+@font-face {
+  font-family: "Open Sans Light Italic";
+  src: url("fonts/OpenSans-LightItalic.ttf"); }
+@font-face {
+  font-family: "Open Sans Italic";
+  src: url("fonts/OpenSans-Italic.ttf"); }
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("fonts/OpenSans-Bold.ttf"); }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Open Sans Regular";
+  user-select: none;
+  /* Feels more like native OS app */
+  cursor: default; }
+
+.emphasized {
+  color: #436cf4; }
+
+.header {
+  border-bottom: 1px solid #CCC;
+  background-color: #F1F1F1;
+  padding: .8rem .5rem .3rem .5rem;
+  z-index: 100;
+  -webkit-app-region: drag;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+  .header #search {
+    flex: 1; }
+  .header * {
+    margin-left: .2rem;
+    margin-right: .2rem; }
+  .header i {
+    user-select: none; }
+  .header #backContainer {
+    margin-top: .5rem;
+    margin-bottom: -.5rem; }
+  .header #toRoot {
+    margin-left: -0.4rem;
+    margin-right: -.5rem; }
+
+#contentList {
+  font-size: 14px; }
+  #contentList tr {
+    padding-top: 5px;
+    padding-bottom: 5px; }
+
+#contextMenu {
+  width: 300px;
+  height: calc(100vh - 67px);
+  position: fixed;
+  top: 67px;
+  right: 0px;
+  border-left: 1px solid #CCC;
+  background: #F1F1F1;
+  z-index: 100;
+  overflow-y: scroll;
+  transform: translateX(301px); }
+
+#settingsButton {
+  border-left: 1px solid #CCC; }
+
+#groupContainer {
+  margin-left: 55px;
+  padding-left: 5px;
+  border-left: 1px solid #AAA; }
+
+#fileDescArea {
+  font-size: 0.8rem; }
+
+#previewImg {
+  height: 200px;
+  border: 1px solid #AAA;
+  border-radius: 4px; }
+
+.group-select {
+  padding-top: 3px;
+  padding-bottom: 3px; }
+
+.content {
+  padding-top: 66px;
+  height: calc(100vh - 67px); }
+
+.spin {
+  animation: 1.5s spin; }
+
+.table-dense td {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+.vert-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.vert-center-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.group-select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+.flex-left {
+  justify-content: flex-start; }
+
+.flex-right {
+  justify-content: flex-end; }
+
+.flex-menu {
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; }
+
+.text-large {
+  font-size: 2rem; }
+
+.very-small {
+  font-size: 1rem; }
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.6; }
+
+.fill {
+  height: 100vh;
+  width: 100vw; }
+
+.clickable {
+  cursor: pointer;
+  user-select: none; }
+
+.clickable:hover {
+  opacity: 0.8; }
+
+.no-select {
+  user-select: none; }
+
+.text-editable {
+  cursor: text;
+  width: 100%;
+  line-height: 1.2; }
+
+.hide {
+  display: none; }
+
+:not(.no-animate) {
+  transition: 0.2s; }
+
+.table td {
+  border: 0 !important; }
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+/*# sourceMappingURL=main.css.map */

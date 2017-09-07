@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Notorious</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="vert-center-row">
+        <div id="backContainer" class="no-select">
+          <i id="toRoot" class="material-icons text-large pt-2" onclick="toActiveLib()">first_page</i>
+          <i id="back" class="material-icons text-large pr-1 pt-2 clickable" onclick="backDirectory()">chevron_left</i>
+        </div>
+        <div style="border-left: 1px solid #CCC" class="pl-1">
+          <span id="activeLib" class="pr-2"></span> <br />
+          <span class="clickable text-muted small" onclick="changeActiveLibrary()">Change</span>
+        </div>
+      </div>
+      <input id="search" class="form-control" type="text" placeholder="Search" value="" />
+
+      <i id="refreshButton" class="material-icons clickable" onclick="updateDirectory()">refresh</i>
+      <i id="settingsButton" class="material-icons clickable pl-2" onclick="openSettings()">settings</i>
+    </div>
+    <div class="content">
+      <table class="table table-dense">
+        <tbody id="contentList">
+
+        </tbody>
+      </table>
+    </div>
+    <div id="contextMenu"></div>
+  </body>
+  <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+  <script src="../js/database.js"></script>
+  <script src="../js/renderers/home.js"></script>
+</html>
